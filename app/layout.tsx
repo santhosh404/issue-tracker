@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./Navbar";
 import '@radix-ui/themes/styles.css';
-import { Theme } from '@radix-ui/themes';
+import { Theme, ThemePanel } from '@radix-ui/themes';
 
 
 
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
       >
-        <Theme>
+        <Theme appearance="light" accentColor="indigo">
           <Navbar />
           <main className="p-5">{children}</main>
         </Theme>
